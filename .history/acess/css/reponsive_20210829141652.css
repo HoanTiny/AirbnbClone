@@ -1,0 +1,32 @@
+@media (min-width: 723px) and (max-width: 1023px) {
+    .hold-on-mobile-tablet {
+        display: none;
+    }
+
+    .background {
+        background-position: unset;
+    }
+
+    .header__nav-list-tablet {
+        display: flex;
+    }
+
+    .search {
+        margin: 0;
+    }
+
+    .search__item:first-of-type {
+        padding-left: 32px;
+    }
+    
+    .search__item {
+        margin: 0;
+    }
+}
+
+@media (max-width: 723px)
+{
+    .search {
+        display: none;
+    }
+}

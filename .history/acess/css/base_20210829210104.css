@@ -1,0 +1,17 @@
+:root {
+    --white-color:#fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; */
+    font-family: 'Font Awesome 5 Free';
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.8rem;
+}
