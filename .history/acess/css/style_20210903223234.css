@@ -283,7 +283,7 @@
 } */
 
 .search__item:last-of-type {
-    padding: 8px;
+    padding: 12px;
 }
 
 .search__item:hover {
@@ -1137,9 +1137,6 @@
 
 }
 
-.js-link-text {
-    cursor: pointer;
-}
 
 .js-header {
     background-color: var(--white-color);
@@ -1239,13 +1236,3 @@
 .nav-input-js:checked ~ .Over-lay-js {
     display: block;
 }
-
-.hidden {
-    display: none;
-}
-
-.js-search__list {
-    border: 1px solid #ccc;
-    border-radius: 50px;
-}
-

@@ -885,11 +885,11 @@
                 </ul>
                 <div class="grid wide">
                     <div class="search">
-                        <ul class="search__list js-search__list">
+                        <ul class="search__list">
                             <li class="search__item">                        
                                 <div class="search__item-link">
                                     <h3 class="search__item-heading">Địa điểm</h3>
-                                    <input type="text" id="text" class="search__item-input" placeholder="Bạn sắp đi đâu">
+                                    <input type="text" class="search__item-input" placeholder="Bạn sắp đi đâu">
                                     <div class="search-where js-search-where-show">
                                         <p class="search-where-heading">Mọi lúc, mọi nơi</p>
                                         <i class="fas fa-times search-where-icon js-search-close"></i>
@@ -961,8 +961,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="link-btn js-search-where-scroll">
-                                        <button onclick="focuss()" class="search__item-link-btn">
+                                    <div class="link-btn js-search-where">
+                                        <button class="search__item-link-btn">
                                             <i class="search__item-link-btn-icon fas fa-search"></i>                           
                                         </button>
                                     </div>
@@ -1109,26 +1109,21 @@
             } else {
                 navbar.style.display = "none";
                 
-            }            
+            }  
+                
         }
 
         
 
-        const searchWheres = document.querySelectorAll('.js-search-where')
+        const searchWhere = document.querySelector('.js-search-where')
         const search = document.querySelector('.js-search-where-show')
         const closesw = document.querySelector ('.js-search-close')
-        
         function showSearchwhere()
         {
             search.classList.add('open')
-                    
-        }  
-        
-        for (const searchWhere of searchWheres) {
-            searchWhere.addEventListener('click',showSearchwhere)
         }
 
-        //searchWhere.addEventListener('click', showSearchwhere)
+        searchWhere.addEventListener('click', showSearchwhere)
 
         function closeSearchwhere() {
             search.classList.remove('open')
@@ -1156,20 +1151,19 @@
 
         // Show header 
 
-        const clickHeaderScrollh1 = document.querySelector('.js-header__nav-scrollbar')
-        const clickHeaderScroll = document.querySelector('.js-header__nav-scrollba-btn')
+        //const clickHeaderScroll = document.querySelector('.js-header__nav-scrollbar')
+        clickHeaderScroll = document.querySelector('.js-header__nav-scrollba-btn')
         const headerapp = document.querySelector('.js-scroll-header-click')
         const jsheader = document.querySelector('.js-header')
         function showHeader () {
             headerapp.classList.add('show')
-            clickHeaderScroll.style.display = "none"  
-            
-            clickHeaderScrollh1.style.display = "none"
+            // clickHeaderScroll.style.display = "none"  
+            clickHeaderScroll.classList.add('hidden')
         }
         function removeHeader () {
             headerapp.classList.remove('show')
-            clickHeaderScroll.style.display = "inline-block"  
-            clickHeaderScrollh1.style.display = "flex"
+            // clickHeaderScroll.style.display = "flex"  
+            clickHeaderScroll.classList.remove('hidden')
         }
         clickHeaderScroll.addEventListener('click', showHeader)
         headerapp.addEventListener('click',removeHeader)
@@ -1178,21 +1172,18 @@
         })
         window.onscroll = function () {rremoveHeader()}
         function rremoveHeader() {
-            headerapp.classList.remove('show')       
-            if((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) ) {
-                navbar.style.display = "flex";  
-                 clickHeaderScroll.style.display = "inline-block" 
-            } else {
-                navbar.style.display = "none";              
-            }             
+            headerapp.classList.remove('show')
+            // if((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) ) {
+            //     navbar.style.display = "flex";   
+                
+            // } else {
+            //     navbar.style.display = "none";
+                
+            // }  
+            
         }
         window.addEventListener("scroll",rremoveHeader)
         
-        // search
-
-        function focuss() {
-            document.getElementById("text").focus();
-        }
     </script>
 </body>
 </html>

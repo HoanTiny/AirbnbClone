@@ -111,8 +111,6 @@
     padding-left: 0;
     width: 200px;
     list-style: none;
-    box-shadow: 0px 0px 12px 2px #ccc;
-    border-radius: 12px;
 }
 
 .nav-tablet__item {
@@ -283,7 +281,7 @@
 } */
 
 .search__item:last-of-type {
-    padding: 8px;
+    padding: 12px;
 }
 
 .search__item:hover {
@@ -1137,9 +1135,6 @@
 
 }
 
-.js-link-text {
-    cursor: pointer;
-}
 
 .js-header {
     background-color: var(--white-color);
@@ -1239,13 +1234,3 @@
 .nav-input-js:checked ~ .Over-lay-js {
     display: block;
 }
-
-.hidden {
-    display: none;
-}
-
-.js-search__list {
-    border: 1px solid #ccc;
-    border-radius: 50px;
-}
-

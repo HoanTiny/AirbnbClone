@@ -56,7 +56,6 @@
 
 .header__nav-item-user-link {
     width: 60px;
-    
 }
 
 .header__nav-item-icon-globe {
@@ -68,20 +67,18 @@
     color: var(--black-color);
     font-size: 1.6rem;
     margin-right: 4px;
-    cursor: pointer;
 }
 
 .header__nav-item-icon-user {
     color: var(--black-color);
     font-size: 1.6rem;
-    cursor: pointer;
 }
 
 .header__nav-item--acticve .header__nav-item-link::after {
     position: absolute;
     content: "";
     display: block;
-    bottom: -10px;
+    bottom: -2px;
     left: 8px;
     right: 8px;
     background-color: var(--white-color);
@@ -111,8 +108,6 @@
     padding-left: 0;
     width: 200px;
     list-style: none;
-    box-shadow: 0px 0px 12px 2px #ccc;
-    border-radius: 12px;
 }
 
 .nav-tablet__item {
@@ -283,7 +278,7 @@
 } */
 
 .search__item:last-of-type {
-    padding: 8px;
+    padding: 12px;
 }
 
 .search__item:hover {
@@ -1137,9 +1132,6 @@
 
 }
 
-.js-link-text {
-    cursor: pointer;
-}
 
 .js-header {
     background-color: var(--white-color);
@@ -1157,21 +1149,6 @@
     color: var(--text-color);
     position: relative;
     font-weight: 200;
-}
-
-.header__nav-item-link-js:hover {
-    color: #999;
-}
-
-.header__nav-item--acticve .header__nav-item-link-js::after {
-    position: absolute;
-    content: "";
-    display: block;
-    bottom: -10px;
-    left: 8px;
-    right: 8px;
-    background-color: #000;
-    height: 2px;
 }
 
 .js-calendar-input-checked:checked ~ .js-calendar {
@@ -1221,31 +1198,3 @@
 .show {
     display: block;
 }
-
-.nav-tablet-js {
-    position: absolute;
-    top: calc(100% + 5px);
-    right:0;
-    background-color: var(--white-color);
-    border-radius: 10px;
-    display: none;
-    z-index: 12;
-}
-
-.nav-input-js:checked ~ .nav-tablet-js {
-    display: block;
-}
-
-.nav-input-js:checked ~ .Over-lay-js {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-.js-search__list {
-    border: 1px solid #ccc;
-    border-radius: 50px;
-}
-

@@ -889,7 +889,7 @@
                             <li class="search__item">                        
                                 <div class="search__item-link">
                                     <h3 class="search__item-heading">Địa điểm</h3>
-                                    <input type="text" id="text" class="search__item-input" placeholder="Bạn sắp đi đâu">
+                                    <input type="text" class="search__item-input" placeholder="Bạn sắp đi đâu">
                                     <div class="search-where js-search-where-show">
                                         <p class="search-where-heading">Mọi lúc, mọi nơi</p>
                                         <i class="fas fa-times search-where-icon js-search-close"></i>
@@ -962,7 +962,7 @@
                                         </div>
                                     </div>
                                     <div class="link-btn js-search-where-scroll">
-                                        <button onclick="focuss()" class="search__item-link-btn">
+                                        <button class="search__item-link-btn">
                                             <i class="search__item-link-btn-icon fas fa-search"></i>                           
                                         </button>
                                     </div>
@@ -1121,9 +1121,7 @@
         function showSearchwhere()
         {
             search.classList.add('open')
-                    
-        }  
-        
+        }
         for (const searchWhere of searchWheres) {
             searchWhere.addEventListener('click',showSearchwhere)
         }
@@ -1190,9 +1188,7 @@
         
         // search
 
-        function focuss() {
-            document.getElementById("text").focus();
-        }
+        // const jssearchscroll = document.querySelector
     </script>
 </body>
 </html>
