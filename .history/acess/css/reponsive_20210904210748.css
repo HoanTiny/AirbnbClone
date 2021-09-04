@@ -175,16 +175,4 @@
     .home-place__item-img {
         height: 345px;
     }
-
-    .menu-list__item {
-        border: none;
-    }
-
-    .header-page2 {
-        border-bottom: none;
-    }
-
-    .header__mobile-page2 {
-        display: block;
-    }
 }

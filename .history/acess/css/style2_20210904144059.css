@@ -1,0 +1,12 @@
+.header__nav-item-link-page2 {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    /* line-height: 30px; */
+    position: relative;
+    font-weight: 300;
+}
+
+.header-page2 {
+    border-bottom: 1px solid rgb(224, 222, 222);
+}

@@ -1,0 +1,45 @@
+.header__nav-item-link-page2 {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    /* line-height: 30px; */
+    position: relative;
+    font-weight: 300;
+}
+
+.header-page2 {
+    border-bottom: 1px solid rgb(224, 222, 222);
+}
+
+.header__nav-item-user-page2 {
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 30px;
+    padding: 8px 12px;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-list__item{
+
+}
+.fas{
+
+}
+.fa-home{
+
+}
+.menu-list__item-name{
+
+}
+.fas.fa-home{
+
+}

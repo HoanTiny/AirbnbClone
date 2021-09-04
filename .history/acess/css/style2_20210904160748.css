@@ -1,0 +1,113 @@
+.header__nav-item-link-page2 {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    /* line-height: 30px; */
+    position: relative;
+    font-weight: 300;
+}
+
+.header-page2 {
+    border-bottom: 1px solid rgb(224, 222, 222);
+}
+
+.header__nav-item-user-page2 {
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 30px;
+    padding: 8px 12px;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+    list-style: none;
+}
+.menu-list__item{
+    padding: 12px 8px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.menu-list:first-of-type .menu-list__item--active {
+    cursor: default;
+    border-bottom: 1px solid #000;
+    color: #000;
+    font-weight: 600;
+}
+
+.menu-list__item:not(.menu-list__item--active):hover {
+    color: rgb(117, 115, 115);
+}
+
+.menu-list__item-name{
+    font-size: 1.5rem;
+}
+
+.menu-list:last-of-type .menu-list__item {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 8px 12px;
+
+}
+
+.menu-list__item-icon {
+    font-size: 1.4rem;
+    margin: 4px;
+}
+
+.menu-list:last-of-type .menu-list__item:not(.menu-list__item--active):hover {
+    border: 1px solid #000;
+}
+
+.menu-list:last-of-type .menu-list__item--active {
+    border: 1px solid #000;
+    background-color: rgb(241, 238, 238);
+    color: var(--text-color);
+}
+
+.home-place__item-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.home-place__item-info{
+    --line-height: 2rem;
+    margin: 6px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    line-height: var(--line-height);
+    height: calc(var(--line-height));
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.home-place__item-info-name{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.home-place__item-info-price{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 300;
+    margin-left: auto;
+}
+.home-place__item-far{
+    font-size: 1.4rem;
+    color: #999;
+}
+.home-place__item-far-num{
+
+}
+

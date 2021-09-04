@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./acess/font/fontawesome-free-5.15.3-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="icon" href="https://banner2.cleanpng.com/20190305/qul/kisspng-airbnb-vector-graphics-logo-portable-network-graph-ik-5c7e19a9927a99.0907788415517679776.jpg" type="image/x-icon" />
-     
 </head>
 <body>
     <div class="app">
@@ -379,11 +378,9 @@
                 <div class="grid wide">
                     <h3 class="background__content-heading">Bạn chưa biết nên đi đâu? Tuyệt!</h3>
                     <div class="background__content-search">
-                        <a href="./page2.html">
-                            <button class="background__content-search-btn">
-                                <span class="background__content-search-btn-span">Tìm kiếm linh hoạt</span>
-                            </button>
-                        </a>
+                        <button class="background__content-search-btn">
+                            <span class="background__content-search-btn-span">Tìm kiếm linh hoạt</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1099,6 +1096,104 @@
         </div>
     </div>
 
-    <script src="./acess/js.js"></script>
+    <script>
+        window.onscroll = function() {Scrollheader()};
+        var navbar = document.getElementById("header__nav-scrollbar");  
+        var navbarmobile = document.getElementById("header__mobile"); 
+        var sticky = navbar.offsetTop;
+
+        function Scrollheader() {
+            if((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) ) {
+                navbar.style.display = "flex";   
+                
+            } else {
+                navbar.style.display = "none";
+                
+            }            
+        }
+
+        
+
+        const searchWheres = document.querySelectorAll('.js-search-where')
+        const search = document.querySelector('.js-search-where-show')
+        const closesw = document.querySelector ('.js-search-close')
+        
+        function showSearchwhere()
+        {
+            search.classList.add('open')
+                    
+        }  
+        
+        for (const searchWhere of searchWheres) {
+            searchWhere.addEventListener('click',showSearchwhere)
+        }
+
+        //searchWhere.addEventListener('click', showSearchwhere)
+
+        function closeSearchwhere() {
+            search.classList.remove('open')
+        }    
+        closesw.addEventListener('click', closeSearchwhere)
+
+        // Tìm kiếm linh hoạt
+        const headerMobileShow = document.querySelector('.js-header__mobile-checked')
+        const headerMobileSearch = document.querySelector('.js-header__mobile-search-show')
+        const headerMobileClose = document.querySelector('.js-header__mobile-search-close')
+
+        function showHeaderMobilesearch()
+        {
+            headerMobileSearch.classList.add('open')
+        }
+
+        headerMobileShow.addEventListener('click',showHeaderMobilesearch)
+
+        function closeHeaderMobilesearchClose()
+        {
+            headerMobileSearch.classList.remove('open')
+        }
+
+        headerMobileClose.addEventListener('click', closeHeaderMobilesearchClose)
+
+        // Show header 
+
+        const clickHeaderScrollh1 = document.querySelector('.js-header__nav-scrollbar')
+        const clickHeaderScroll = document.querySelector('.js-header__nav-scrollba-btn')
+        const headerapp = document.querySelector('.js-scroll-header-click')
+        const jsheader = document.querySelector('.js-header')
+        function showHeader () {
+            headerapp.classList.add('show')
+            clickHeaderScroll.style.display = "none"  
+            
+            clickHeaderScrollh1.style.display = "none"
+        }
+        function removeHeader () {
+            headerapp.classList.remove('show')
+            clickHeaderScroll.style.display = "inline-block"  
+            clickHeaderScrollh1.style.display = "flex"
+        }
+        clickHeaderScroll.addEventListener('click', showHeader)
+        headerapp.addEventListener('click',removeHeader)
+        jsheader.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+        window.onscroll = function () {rremoveHeader()}
+        function rremoveHeader() {
+            headerapp.classList.remove('show')       
+            if((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) ) {
+                navbar.style.display = "flex";  
+                 clickHeaderScroll.style.display = "inline-block" 
+            } else {
+                navbar.style.display = "none";              
+            }             
+        }
+        window.addEventListener("scroll",rremoveHeader)
+        
+        // search
+
+        function focuss() {
+            document.getElementById("text").focus();
+        }
+    </script>    
+
 </body>
 </html>
