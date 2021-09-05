@@ -1263,7 +1263,7 @@
     align-items: center;
     justify-content: center;
     z-index: 32;
-    display: none;
+    /* display: none; */
 }
 
 .modal__sign {

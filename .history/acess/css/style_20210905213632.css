@@ -1263,7 +1263,7 @@
     align-items: center;
     justify-content: center;
     z-index: 32;
-    display: none;
+    /* display: none; */
 }
 
 .modal__sign {
@@ -1331,22 +1331,10 @@
     background-color: var(--white-color);
     padding-left: 0;
     list-style: none;
-    border: 1px solid #000;
-    max-height: 400px;
-    overflow-y: auto;
-    z-index: 2;
-    display: none;
 }
 
-.mumberphone__list-item {
+.numberphone__list-item {
     text-align: left;
-    padding: 4px 12px;
-    font-size: 1.5rem;
-}
-
-.mumberphone__list-item:hover {
-    background-color: rgb(89, 133, 253);
-    color: var(--white-color);
 }
 
 .modal__sign-box-btn-text1{
@@ -1370,7 +1358,6 @@
     font-size: 1.6rem;
     outline: none;
     border: none;
-    border-radius: 20px;
 }
 .modal__sign-rules{
     padding: 12px 0;
@@ -1462,8 +1449,4 @@
 
 .showmodal {
     display: flex;
-}
-
-.input-numberphone:checked ~ .numberphone__list {
-    display: block;
 }
