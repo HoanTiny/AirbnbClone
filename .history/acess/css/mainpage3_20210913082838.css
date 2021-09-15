@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.banner {
+    display: flex;
+}
+.banner__left {
+    width: 50%;
+}
+.banner__left-img {
+}
+.banner__left-conttent {
+}
+.banner__left-heading {
+}
+.banner__left-btn {
+}
+.banner-right {
+}
+.banner__right-video {
+}

@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    height: 650px;
+}
+.banner__left {
+    width: 50%;
+    background-color: #000;
+}
+.banner__left-img {
+}
+.banner__left-conttent {
+}
+.banner__left-heading {
+}
+.banner__left-btn {
+}
+.banner-right {
+    width: 50%;
+}
+.banner__right-video {
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+}
