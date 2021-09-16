@@ -318,7 +318,7 @@
 
     /* PAGE 3 */
     .banner {
-        height: 720px;
+        max-height: 720px;
         flex-direction: column;
         flex-direction: column-reverse;
         justify-content: start;
