@@ -308,5 +308,18 @@ body {
 }
 
 .nav-footer {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+}
+.nav-footer-btn {
+    background-image: linear-gradient(
+        to right,
+        rgb(229, 29, 80),
+        rgb(220, 14, 100)
+    );
+    padding: 12px 24px;
 }

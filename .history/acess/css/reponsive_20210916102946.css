@@ -129,7 +129,7 @@
     }
 
     .container__product {
-        height: 1400px;
+        height: 140vh;
     }
 
     .container__product-heading {
@@ -318,7 +318,7 @@
 
     /* PAGE 3 */
     .banner {
-        max-height: 680px;
+        max-height: 100vh;
         flex-direction: column;
         flex-direction: column-reverse;
         justify-content: start;
