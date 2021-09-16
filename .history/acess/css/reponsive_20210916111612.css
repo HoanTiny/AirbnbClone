@@ -109,7 +109,7 @@
         font-weight: bold;
     }
 
-    .banner__left-icon {
+    i.banner__left-icon {
         color: #848282;
         bottom: 0px;
         display: none;
@@ -358,7 +358,7 @@
 
     .banner__left-icon {
         color: #848282;
-        bottom: 0;
+        bottom: 18px;
     }
 
     .banner__left-btn {
